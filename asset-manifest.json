@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/keyboard-react/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/keyboard-react/static/js/main.901f63eb.chunk.js",
+    "main.js.map": "/keyboard-react/static/js/main.901f63eb.chunk.js.map",
+    "runtime-main.js": "/keyboard-react/static/js/runtime-main.8cbac666.js",
+    "runtime-main.js.map": "/keyboard-react/static/js/runtime-main.8cbac666.js.map",
+    "static/js/2.06d104c0.chunk.js": "/keyboard-react/static/js/2.06d104c0.chunk.js",
+    "static/js/2.06d104c0.chunk.js.map": "/keyboard-react/static/js/2.06d104c0.chunk.js.map",
+    "index.html": "/keyboard-react/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/keyboard-react/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.06d104c0.chunk.js.LICENSE.txt": "/keyboard-react/static/js/2.06d104c0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8cbac666.js",
+    "static/js/2.06d104c0.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.901f63eb.chunk.js"
+  ]
+}
