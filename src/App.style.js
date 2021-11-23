@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { color1 } from "./theme";
+import { color1 } from './theme'
 
 export const Wrapper = styled.main`
   background-color: ${color1};
@@ -10,5 +10,4 @@ export const Wrapper = styled.main`
   justify-content: center;
   align-items: center;
   color: ${color1};
-`;
-
+`

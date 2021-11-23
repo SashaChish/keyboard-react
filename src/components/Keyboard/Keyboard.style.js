@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { color1, color2, color3 } from "../../theme";
+import styled from 'styled-components'
+import { color1, color2, color3 } from '../../theme'
 
 export const Wrapper = styled.div`
   border: 1px solid ${color2};
@@ -12,14 +12,14 @@ export const Wrapper = styled.div`
   flex-direction: column;
   row-gap: 5px;
   margin-top: 10px;
-`;
+`
 
 export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 10px;
-`;
+  row-gap: 13px;
+`
 
 export const Key = styled.div`
   color: ${({ color }) => color || color3};
@@ -36,7 +36,15 @@ export const Key = styled.div`
   text-transform: uppercase;
   box-shadow: 0 0 0 1px;
 
+  &:nth-child(54) {
+    flex: 1 0 70px;
+  }
+
+  &:nth-child(65) {
+    flex: 1 0 70px;
+  }
+
   &:nth-child(69) {
     flex: 1;
   }
-`;
+`

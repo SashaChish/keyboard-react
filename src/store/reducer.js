@@ -1,12 +1,12 @@
-import { color1 } from "../theme";
-import * as types from "./types";
+import { color1 } from '../theme'
+import * as types from './types'
 
 const initialState = {
-  theme: "",
-  presets: JSON.parse(localStorage.getItem("presets")) || {},
-  activePreset: "",
+  theme: '',
+  presets: JSON.parse(localStorage.getItem('presets')) || {},
+  activePreset: '',
   color: color1,
-};
+}
 
 export const appReducer = (state = initialState, { type, payload }) => {
   switch (type) {
@@ -17,22 +17,22 @@ export const appReducer = (state = initialState, { type, payload }) => {
           ...state.theme,
           [payload.id]: payload.color,
         },
-      };
+      }
     case types.SET_THEME:
       return {
         ...state,
         theme: payload,
-      };
+      }
     case types.ONCHANGE_COLOR:
       return {
         ...state,
         color: payload,
-      };
+      }
     case types.ONCHANGE_ACTIVE_PRESET:
       return {
         ...state,
         activePreset: payload,
-      };
+      }
     case types.ONCHANGE_PRESETS:
       return {
         ...state,
@@ -40,8 +40,8 @@ export const appReducer = (state = initialState, { type, payload }) => {
           ...state.presets,
           [payload.name]: payload.theme,
         },
-      };
+      }
     default:
-      return state;
+      return state
   }
-};
+}

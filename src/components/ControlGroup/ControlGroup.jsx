@@ -1,31 +1,27 @@
-import { useMemo } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useMemo } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
-import {
-  onChangeActivePreset,
-  onChangeColor,
-  setTheme,
-} from "../../store/actions";
-import { useApp } from "../../store/selectors";
+import { onChangeActivePreset, onChangeColor, setTheme } from '../../store/actions'
+import { useApp } from '../../store/selectors'
 
-import { Column, H3, Select, OptionsWrap, PresetName } from "./ControlGroup.style";
+import { Column, H3, Select, OptionsWrap, PresetName } from './ControlGroup.style'
 
 const ControlGroup = () => {
-  const { color, activePreset, presets } = useSelector(useApp);
-  const dispatch = useDispatch();
+  const { color, activePreset, presets } = useSelector(useApp)
+  const dispatch = useDispatch()
 
-  const presetNameList = useMemo(() => Object.keys(presets), [presets]);
+  const presetNameList = useMemo(() => Object.keys(presets), [presets])
 
-  const handleOnChangeColor = (e) => {
-    dispatch(onChangeColor(e.target.value));
-  };
+  const handleOnChangeColor = e => {
+    dispatch(onChangeColor(e.target.value))
+  }
 
-  const onChangeSelect = (e) => {
-    const value = e.target.value;
+  const onChangeSelect = e => {
+    const value = e.target.value
 
-    dispatch(onChangeActivePreset(value));
-    dispatch(setTheme(presets[value]));
-  };
+    dispatch(onChangeActivePreset(value))
+    dispatch(setTheme(presets[value]))
+  }
 
   return (
     <>
@@ -47,12 +43,10 @@ const ControlGroup = () => {
       </OptionsWrap>
 
       <PresetName>
-        {activePreset
-          ? activePreset
-          : `preset-${Object.keys(presets).length || 0}`}
+        {activePreset ? activePreset : `preset-${Object.keys(presets).length || 0}`}
       </PresetName>
     </>
-  );
-};
+  )
+}
 
-export default ControlGroup;
+export default ControlGroup

@@ -1,13 +1,13 @@
-import styled from "styled-components";
-import { color1, color2 } from "../../theme";
+import styled from 'styled-components'
+import { color1, color2 } from '../../theme'
 
 export const Button = styled.button`
-  min-width: 150px;
+  padding: 5px;
   margin: 20px 15px 0 0;
-  padding: 5px 10px;
   letter-spacing: 2px;
-  border: 1px solid ${color2};
-  border-radius: 5px;
+	font-size: 17px;
+  border: none;
+  border-bottom: 2px solid ${color2};
   text-transform: uppercase;
   background-color: ${color1};
   ${({ disabled }) =>
@@ -16,14 +16,15 @@ export const Button = styled.button`
     &:hover {
       cursor: pointer;
       color: #0081ff;
-      transition: color ease-in-out 0.3s;
+      transition: color ease-in-out 0.2s;
+			border-bottom: 2px solid #0081ff;
     }
   `}
-`;
+`
 
 export const ButtonsWrap = styled.div`
   min-width: 350px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-`;
+`

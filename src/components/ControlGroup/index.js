@@ -1,3 +1,3 @@
-import ControlGroup from "./ControlGroup";
+import ControlGroup from './ControlGroup'
 
-export default ControlGroup;
+export default ControlGroup

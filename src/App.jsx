@@ -1,8 +1,8 @@
-import Keyboard from "./components/Keyboard";
-import Buttons from "./components/Buttons";
-import ControlGroup from "./components/ControlGroup";
+import Keyboard from './components/Keyboard'
+import Buttons from './components/Buttons'
+import ControlGroup from './components/ControlGroup'
 
-import { Wrapper } from "./App.style";
+import { Wrapper } from './App.style'
 
 export default function App() {
   return (
@@ -11,5 +11,5 @@ export default function App() {
       <ControlGroup />
       <Buttons />
     </Wrapper>
-  );
+  )
 }
